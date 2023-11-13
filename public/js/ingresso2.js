@@ -140,9 +140,10 @@ function renderizarCarrinho() {
 }
 
 // Envia todos os filmes do carrinho
+// Açucar sintático -> Syntax Sugar
 async function enviaDadosParaOBackend() {
     // realizar um fetch com método POST, encaminhado o array de string
-    const resultado = await fetch('http://localhost:3333/api/carrinho', {
+    const resultado = await fetch('http://localhost:3333/api/carrinhos', {
         method: 'POST',
         headers:{
             'Content-Type': 'application/json'
